@@ -18,13 +18,13 @@ public class AdminController {
 
     private static Logger logger = LoggerFactory.getLogger(AdminController.class);
 
-    @ConfigProperty(name = "config.version")
+    @ConfigProperty(name = "version")
     private String version;
 
     @GET
     @Path("/version")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getMessages() {
+    public Response getVersion() {
 
         HashMap<String, String> result = new HashMap<>();
         result.put("version", version);
@@ -53,4 +53,5 @@ public class AdminController {
                 .entity(result)
                 .build();
     }
+
 }
