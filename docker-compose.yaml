@@ -1,4 +1,4 @@
-name: caja-ande-backend
+name: example-app
 
 networks:
   docker-net:
@@ -7,12 +7,13 @@ networks:
 
 services:
 
-  backend:
-    image: caja-ande/quarkus:1.0.0-SNAPSHOT
-    hostname: backend
-    container_name: backend
+  quarkus:
+    image: docker.io/brianwolf94/quarkus:1.0.0
+    hostname: quarkus
+    container_name: quarkus
     environment:
-      EXAMPLE: hola mundo
+      OTEL_ENABLED: false
+      SWAGGER_UI_PATH: /docs
     ports:
       - 8080:8080
     networks:
