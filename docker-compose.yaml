@@ -1,0 +1,19 @@
+name: caja-ande-backend
+
+networks:
+  docker-net:
+    name: docker-net
+    external: true
+
+services:
+
+  backend:
+    image: caja-ande/quarkus:1.0.0-SNAPSHOT
+    hostname: backend
+    container_name: backend
+    environment:
+      EXAMPLE: hola mundo
+    ports:
+      - 8080:8080
+    networks:
+      - docker-net

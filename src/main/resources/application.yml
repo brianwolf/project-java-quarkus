@@ -1,7 +1,0 @@
-version: ${VERSION:local}
-
-quarkus:
-  swagger-ui:
-    path: /docs
-  http:
-    root-path: /
