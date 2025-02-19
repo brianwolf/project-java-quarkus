@@ -1,6 +1,6 @@
 # java-quarkus
 
-> Ejemplo de proyecto de java 17 con quarkus
+> Ejemplo de proyecto de Java 21 con Quarkus
 
 ![alt](docs/img/quarkus_logo.png)
 
@@ -12,13 +12,17 @@
 ## :tada: Uso
 
 ```bash
-
 # correr usando dev
 make r
 
 # compilar a binario
 make p
 ```
+
+Se pude navegar a las siguientes urls una vez la aplicacion corra
+
+* [Quarkus Dev UI](http://localhost:8080/q/dev-ui/extensions)
+* [Swagger UI](http://localhost:8080/docs)
 
 ## :beetle: Debugger
 
@@ -51,7 +55,7 @@ launch.json
 ## :books: Referencias
 
 * [Iconos](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
-* [Readme de quarkus](docs/README.md)
+* [Opentelemetry](https://es.quarkus.io/guides/opentelemetry)
 
 ## :grin: Autor
 
